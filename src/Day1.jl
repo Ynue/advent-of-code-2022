@@ -6,8 +6,10 @@ export day1
 function updateState!(state, current)
   idx = searchsortedfirst(state, current)
   if idx > 1
-    insert!(state, idx, current)
-    popfirst!(state)
+    for i in 1:idx-2
+      state[i] = state[i+1]
+    end
+    state[idx-1] = current
   end
 end
 
@@ -29,7 +31,7 @@ function day1()
   end
   updateState!(state, current)
 
-  state[end], sum(state[end-topn+1:end])
+  state[end], sum(state)
 end
 
 end # module Day1
