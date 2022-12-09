@@ -10,5 +10,6 @@ using AOC2022.Helpers
 @publishDay 5
 @publishDay 6
 @publishDay 7
+@publishDay 8
 
 end # module AOC2022

@@ -5,12 +5,11 @@ using DataStructures
 export day6
 
 function countUnique(dict)
-  sum(el -> el[2] > 0 ? 1 : 0, dict)
+  count(el -> el[2] > 0, dict)
 end
 
 function day6()
   filename = getFilename(6)
-  file = open(filename, "r")
 
   idx = 0
 
@@ -47,6 +46,7 @@ function day6()
     count2['a'+i] = 0
   end
 
+  file = open(filename, "r")
   while !eof(file)
     n = read(file, Char)
     n == '\n' && continue
@@ -73,6 +73,7 @@ function day6()
     end
   end
   close(file)
+
   index1, index2
 end
 

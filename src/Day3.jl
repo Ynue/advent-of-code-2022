@@ -22,7 +22,6 @@ function day3()
   cycle = -1
 
   for line in readlines(filename)
-    line = strip(line)
     N = length(line)
     n = div(N, 2)
 

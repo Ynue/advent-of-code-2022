@@ -21,7 +21,6 @@ function day1()
   current = 0
 
   for line in readlines(filename)
-    line = strip(line)
     if isempty(line)
       updateState!(state, current)
       current = 0
