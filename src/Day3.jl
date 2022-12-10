@@ -21,7 +21,7 @@ function day3()
   Σbadges = 0
   cycle = -1
 
-  for line in readlines(filename)
+  for line in eachline(filename)
     N = length(line)
     n = div(N, 2)
 

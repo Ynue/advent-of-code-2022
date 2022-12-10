@@ -11,7 +11,7 @@ function day5()
   stacksAll = Vector{Vector{Char}}()
   finishedHeader = false
 
-  for line in readlines(filename)
+  for line in eachline(filename)
     if !finishedHeader
       push!(header, line)
 

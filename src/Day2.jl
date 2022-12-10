@@ -40,7 +40,7 @@ function day2()
   filename = getFilename(2)
   score1, score2 = 0, 0
 
-  for line in readlines(filename)
+  for line in eachline(filename)
     p = letter2figure[line[1]]
     q = letter2figure[line[3]]
 

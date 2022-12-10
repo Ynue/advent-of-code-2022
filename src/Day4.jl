@@ -9,7 +9,7 @@ function day4()
   inclusions = 0
   overlaps = 0
 
-  for line in readlines(filename)
+  for line in eachline(filename)
     dash1 = findfirst('-', line)
     dash2 = findlast('-', line)
     comma = findfirst(',', line)

@@ -104,7 +104,7 @@ function day8()
   ncols = length(readline(filename))
   heights = Matrix{Int8}(undef, nrows, ncols)
 
-  for (row, line) in enumerate(readlines(filename))
+  for (row, line) in enumerate(eachline(filename))
     for (col, height) in enumerate(line)
       heights[row, col] = parse(Int8, height)
     end

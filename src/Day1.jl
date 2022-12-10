@@ -20,7 +20,7 @@ function day1()
   state = zeros(Int, topn)
   current = 0
 
-  for line in readlines(filename)
+  for line in eachline(filename)
     if isempty(line)
       updateState!(state, current)
       current = 0
